@@ -1,0 +1,36 @@
+{
+  "name": "beteveterinaria — Dra. Elisabete Nascimento",
+  "short_name": "beteveterinaria",
+  "lang": "pt-BR",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FBF8FC",
+  "theme_color": "#9c9ad6",
+  "description": "Médica veterinária em Fortaleza especializada em felinos. Consultas presenciais e online.",
+  "categories": ["medical", "health", "lifestyle"],
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/Icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
