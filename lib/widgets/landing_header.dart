@@ -49,14 +49,20 @@ class LandingHeader extends StatelessWidget {
                       IconButton(
                         tooltip: 'WhatsApp',
                         onPressed: openWhatsApp,
-                        icon: const Icon(Icons.chat_rounded),
-                        color: AppColors.rosaDeep,
+                        icon: const BrandIconImage(
+                          asset: BrandIcons.whatsapp,
+                          color: AppColors.rosaDeep,
+                          size: 22,
+                        ),
                       ),
                       IconButton(
                         tooltip: 'Instagram',
                         onPressed: openInstagram,
-                        icon: const Icon(Icons.camera_alt_outlined),
-                        color: AppColors.lavandaDeep,
+                        icon: const BrandIconImage(
+                          asset: BrandIcons.instagram,
+                          color: AppColors.lavandaDeep,
+                          size: 22,
+                        ),
                       ),
                     ],
                   )

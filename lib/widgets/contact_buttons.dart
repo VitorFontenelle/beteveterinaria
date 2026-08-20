@@ -4,6 +4,11 @@ import 'package:beteveterinaria/utils/launch_links.dart';
 import 'package:beteveterinaria/widgets/responsive.dart';
 import 'package:flutter/material.dart';
 
+class BrandIcons {
+  static const whatsapp = 'assets/icons/whatsapp.png';
+  static const instagram = 'assets/icons/instagram.png';
+}
+
 class ContactButtons extends StatelessWidget {
   const ContactButtons({
     super.key,
@@ -21,7 +26,7 @@ class ContactButtons extends StatelessWidget {
     final whatsapp = light
         ? _SolidContactButton(
             label: compact ? 'WhatsApp' : LandingContent.whatsappLabel,
-            icon: Icons.chat_rounded,
+            iconAsset: BrandIcons.whatsapp,
             onPressed: openWhatsApp,
             compact: compact,
             background: AppColors.white,
@@ -29,7 +34,7 @@ class ContactButtons extends StatelessWidget {
           )
         : _GradientButton(
             label: compact ? 'WhatsApp' : LandingContent.whatsappLabel,
-            icon: Icons.chat_rounded,
+            iconAsset: BrandIcons.whatsapp,
             onPressed: openWhatsApp,
             compact: compact,
           );
@@ -37,7 +42,7 @@ class ContactButtons extends StatelessWidget {
     final instagram = light
         ? _OutlinedContactButton(
             label: compact ? 'Instagram' : LandingContent.instagramLabel,
-            icon: Icons.camera_alt_outlined,
+            iconAsset: BrandIcons.instagram,
             onPressed: openInstagram,
             compact: compact,
             foreground: AppColors.white,
@@ -45,7 +50,7 @@ class ContactButtons extends StatelessWidget {
           )
         : _OutlinedContactButton(
             label: compact ? 'Instagram' : LandingContent.instagramLabel,
-            icon: Icons.camera_alt_outlined,
+            iconAsset: BrandIcons.instagram,
             onPressed: openInstagram,
             compact: compact,
             foreground: AppColors.lavandaDeep,
@@ -86,16 +91,43 @@ TextStyle _contactLabelStyle(Color color) => TextStyle(
       height: 1.2,
     );
 
+/// White-on-transparent PNG tinted to [color] via [BlendMode.srcIn].
+class BrandIconImage extends StatelessWidget {
+  const BrandIconImage({
+    super.key,
+    required this.asset,
+    required this.color,
+    this.size = 20,
+  });
+
+  final String asset;
+  final Color color;
+  final double size;
+
+  @override
+  Widget build(BuildContext context) {
+    return Image.asset(
+      asset,
+      width: size,
+      height: size,
+      fit: BoxFit.contain,
+      color: color,
+      colorBlendMode: BlendMode.srcIn,
+      filterQuality: FilterQuality.high,
+    );
+  }
+}
+
 class _GradientButton extends StatelessWidget {
   const _GradientButton({
     required this.label,
-    required this.icon,
+    required this.iconAsset,
     required this.onPressed,
     this.compact = false,
   });
 
   final String label;
-  final IconData icon;
+  final String iconAsset;
   final VoidCallback onPressed;
   final bool compact;
 
@@ -124,7 +156,7 @@ class _GradientButton extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(icon, color: AppColors.white, size: 20),
+                BrandIconImage(asset: iconAsset, color: AppColors.white),
                 const SizedBox(width: 10),
                 Text(label, style: _contactLabelStyle(AppColors.white)),
               ],
@@ -139,7 +171,7 @@ class _GradientButton extends StatelessWidget {
 class _SolidContactButton extends StatelessWidget {
   const _SolidContactButton({
     required this.label,
-    required this.icon,
+    required this.iconAsset,
     required this.onPressed,
     required this.background,
     required this.foreground,
@@ -147,7 +179,7 @@ class _SolidContactButton extends StatelessWidget {
   });
 
   final String label;
-  final IconData icon;
+  final String iconAsset;
   final VoidCallback onPressed;
   final Color background;
   final Color foreground;
@@ -171,7 +203,7 @@ class _SolidContactButton extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(icon, color: foreground, size: 20),
+                BrandIconImage(asset: iconAsset, color: foreground),
                 const SizedBox(width: 10),
                 Text(label, style: _contactLabelStyle(foreground)),
               ],
@@ -186,7 +218,7 @@ class _SolidContactButton extends StatelessWidget {
 class _OutlinedContactButton extends StatelessWidget {
   const _OutlinedContactButton({
     required this.label,
-    required this.icon,
+    required this.iconAsset,
     required this.onPressed,
     required this.foreground,
     required this.borderColor,
@@ -194,7 +226,7 @@ class _OutlinedContactButton extends StatelessWidget {
   });
 
   final String label;
-  final IconData icon;
+  final String iconAsset;
   final VoidCallback onPressed;
   final Color foreground;
   final Color borderColor;
@@ -218,7 +250,7 @@ class _OutlinedContactButton extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(icon, color: foreground, size: 20),
+                BrandIconImage(asset: iconAsset, color: foreground),
                 const SizedBox(width: 10),
                 Text(label, style: _contactLabelStyle(foreground)),
               ],
