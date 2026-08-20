@@ -81,6 +81,7 @@ class ServicesSection extends StatelessWidget {
 /// Equalizes every card to the tallest natural card height in the grid.
 class _EqualHeightServiceGrid extends StatefulWidget {
   const _EqualHeightServiceGrid({
+    super.key,
     required this.rows,
     required this.columns,
     required this.gap,
