@@ -52,7 +52,7 @@ class LandingHeader extends StatelessWidget {
                         icon: const BrandIconImage(
                           asset: BrandIcons.whatsapp,
                           color: AppColors.rosaDeep,
-                          size: 26,
+                          size: 32,
                         ),
                       ),
                       IconButton(
@@ -61,7 +61,7 @@ class LandingHeader extends StatelessWidget {
                         icon: const BrandIconImage(
                           asset: BrandIcons.instagram,
                           color: AppColors.lavandaDeep,
-                          size: 26,
+                          size: 32,
                         ),
                       ),
                     ],
