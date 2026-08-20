@@ -1,5 +1,6 @@
 import 'package:beteveterinaria/data/landing_content.dart';
 import 'package:beteveterinaria/theme/app_theme.dart';
+import 'package:beteveterinaria/widgets/contact_buttons.dart';
 import 'package:beteveterinaria/widgets/responsive.dart';
 import 'package:beteveterinaria/widgets/seo_text.dart';
 import 'package:flutter/material.dart';
@@ -74,15 +75,15 @@ class _FaqTileState extends State<_FaqTile> {
         ),
         child: Material(
           color: Colors.transparent,
-          child: InkWell(
-            borderRadius: BorderRadius.circular(16),
-            onTap: () => setState(() => _expanded = !_expanded),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                InkWell(
+                  borderRadius: BorderRadius.circular(12),
+                  onTap: () => setState(() => _expanded = !_expanded),
+                  child: Row(
                     children: [
                       Expanded(
                         child: SeoHeading(
@@ -104,24 +105,29 @@ class _FaqTileState extends State<_FaqTile> {
                       ),
                     ],
                   ),
-                  // Keep answers in the tree for crawlers / a11y.
-                  ClipRect(
-                    child: AnimatedAlign(
-                      duration: const Duration(milliseconds: 200),
-                      curve: Curves.easeInOut,
-                      alignment: Alignment.topCenter,
-                      heightFactor: _expanded ? 1 : 0,
-                      child: Padding(
-                        padding: const EdgeInsets.only(top: 12),
-                        child: SeoBodyText(
-                          text: widget.item.answer,
-                          style: const TextStyle(fontSize: 15, height: 1.55),
-                        ),
-                      ),
+                ),
+                // Keep answers in the tree for crawlers / a11y.
+                ClipRect(
+                  child: AnimatedAlign(
+                    duration: const Duration(milliseconds: 200),
+                    curve: Curves.easeInOut,
+                    alignment: Alignment.topCenter,
+                    heightFactor: _expanded ? 1 : 0,
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 12),
+                      child: widget.item.hasContactLinks
+                          ? const ScheduleFaqAnswer()
+                          : SeoBodyText(
+                              text: widget.item.answer,
+                              style: const TextStyle(
+                                fontSize: 15,
+                                height: 1.55,
+                              ),
+                            ),
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ),

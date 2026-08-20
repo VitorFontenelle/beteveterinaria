@@ -1,8 +1,13 @@
 class FaqItem {
-  const FaqItem({required this.question, required this.answer});
+  const FaqItem({
+    required this.question,
+    required this.answer,
+    this.hasContactLinks = false,
+  });
 
   final String question;
   final String answer;
+  final bool hasContactLinks;
 }
 
 class ServiceItem {
@@ -147,6 +152,7 @@ class LandingContent {
       question: 'Como agendar uma consulta?',
       answer:
           'O contato profissional é pelo WhatsApp +55 85 9959-6612 ou pelo Instagram @beteveterinaria. Envie uma mensagem e combine o melhor horário.',
+      hasContactLinks: true,
     ),
   ];
 

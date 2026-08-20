@@ -98,16 +98,13 @@ class LandingFooter extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-              SeoBodyText(
-                text:
-                    'WhatsApp ${LandingContent.phoneDisplay} · '
-                    '${LandingContent.instagramHandle}',
-                textAlign: TextAlign.center,
+              ContactTextLinks(
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
                   color: AppColors.white.withValues(alpha: 0.9),
                 ),
+                linkColor: AppColors.white,
               ),
               const SizedBox(height: 24),
               SeoBodyText(
