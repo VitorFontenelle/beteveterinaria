@@ -97,7 +97,7 @@ class BrandIconImage extends StatelessWidget {
     super.key,
     required this.asset,
     required this.color,
-    this.size = 20,
+    this.size = 24,
   });
 
   final String asset;
