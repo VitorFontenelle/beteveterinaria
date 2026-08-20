@@ -3,6 +3,7 @@ import 'package:beteveterinaria/theme/app_theme.dart';
 import 'package:beteveterinaria/widgets/responsive.dart';
 import 'package:beteveterinaria/widgets/seo_text.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FelineSection extends StatelessWidget {
   const FelineSection({super.key});
@@ -76,8 +77,7 @@ class FelineSection extends StatelessWidget {
         SeoHeading(
           text: LandingContent.felineTitle,
           textAlign: align,
-          style: TextStyle(
-            fontFamily: 'Fraunces',
+          style: GoogleFonts.fraunces(
             fontSize: 34,
             fontWeight: FontWeight.w700,
             color: AppColors.text,

@@ -3,6 +3,7 @@ import 'package:beteveterinaria/theme/app_theme.dart';
 import 'package:beteveterinaria/widgets/responsive.dart';
 import 'package:beteveterinaria/widgets/seo_text.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeVisitSection extends StatelessWidget {
   const HomeVisitSection({super.key});
@@ -24,8 +25,7 @@ class HomeVisitSection extends StatelessWidget {
               SeoHeading(
                 text: LandingContent.homeVisitTitle,
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontFamily: 'Fraunces',
+                style: GoogleFonts.fraunces(
                   fontSize: Responsive.sectionTitleSize(context),
                   fontWeight: FontWeight.w700,
                   color: AppColors.text,

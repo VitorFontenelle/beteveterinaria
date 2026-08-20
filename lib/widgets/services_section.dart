@@ -3,6 +3,7 @@ import 'package:beteveterinaria/theme/app_theme.dart';
 import 'package:beteveterinaria/widgets/responsive.dart';
 import 'package:beteveterinaria/widgets/seo_text.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ServicesSection extends StatelessWidget {
   const ServicesSection({super.key});
@@ -39,8 +40,7 @@ class ServicesSection extends StatelessWidget {
               SeoHeading(
                 text: LandingContent.servicesTitle,
                 textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontFamily: 'Fraunces',
+                style: GoogleFonts.fraunces(
                   fontSize: Responsive.sectionTitleSize(context),
                   fontWeight: FontWeight.w700,
                   color: AppColors.text,

@@ -4,6 +4,7 @@ import 'package:beteveterinaria/widgets/contact_buttons.dart';
 import 'package:beteveterinaria/widgets/responsive.dart';
 import 'package:beteveterinaria/widgets/seo_text.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HeroSection extends StatefulWidget {
   const HeroSection({super.key});
@@ -107,8 +108,7 @@ class _HeroSectionState extends State<HeroSection>
         SeoHeading(
           text: LandingContent.brandName,
           textAlign: align,
-          style: TextStyle(
-            fontFamily: 'Fraunces',
+          style: GoogleFonts.fraunces(
             fontSize: titleSize * 0.72,
             fontWeight: FontWeight.w700,
             color: AppColors.rosaDeep,
@@ -119,8 +119,7 @@ class _HeroSectionState extends State<HeroSection>
         SeoHeading(
           text: LandingContent.heroHeadline,
           textAlign: align,
-          style: TextStyle(
-            fontFamily: 'Fraunces',
+          style: GoogleFonts.fraunces(
             fontSize: titleSize * 0.78,
             fontWeight: FontWeight.w600,
             color: AppColors.text,

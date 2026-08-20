@@ -18,12 +18,29 @@ class ContactButtons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final whatsapp = _GradientButton(
-      label: compact ? 'WhatsApp' : LandingContent.whatsappLabel,
-      icon: Icons.chat_rounded,
-      onPressed: openWhatsApp,
-      compact: compact,
-    );
+    final whatsapp = light
+        ? FilledButton.icon(
+            onPressed: openWhatsApp,
+            icon: const Icon(Icons.chat_rounded, size: 20),
+            label: Text(compact ? 'WhatsApp' : LandingContent.whatsappLabel),
+            style: FilledButton.styleFrom(
+              backgroundColor: AppColors.white,
+              foregroundColor: AppColors.rosaDeep,
+              padding: EdgeInsets.symmetric(
+                horizontal: compact ? 16 : 22,
+                vertical: compact ? 12 : 16,
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(14),
+              ),
+            ),
+          )
+        : _GradientButton(
+            label: compact ? 'WhatsApp' : LandingContent.whatsappLabel,
+            icon: Icons.chat_rounded,
+            onPressed: openWhatsApp,
+            compact: compact,
+          );
 
     final instagram = OutlinedButton.icon(
       onPressed: openInstagram,

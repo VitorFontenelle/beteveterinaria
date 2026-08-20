@@ -4,6 +4,7 @@ import 'package:beteveterinaria/widgets/contact_buttons.dart';
 import 'package:beteveterinaria/widgets/responsive.dart';
 import 'package:beteveterinaria/widgets/seo_text.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CtaSection extends StatelessWidget {
   const CtaSection({super.key});
@@ -33,8 +34,7 @@ class CtaSection extends StatelessWidget {
                 SeoHeading(
                   text: LandingContent.ctaTitle,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'Fraunces',
+                  style: GoogleFonts.fraunces(
                     fontSize: mobile ? 28 : 34,
                     fontWeight: FontWeight.w700,
                     color: AppColors.white,
