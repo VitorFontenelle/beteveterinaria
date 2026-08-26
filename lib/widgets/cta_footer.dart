@@ -88,7 +88,7 @@ class LandingFooter extends StatelessWidget {
               SeoBodyText(
                 text:
                     '${LandingContent.doctorName} · ${LandingContent.crmv}\n'
-                    'Veterinária domiciliar em Fortaleza, Caucaia e Eusébio · '
+                    'Veterinária domiciliar em Fortaleza e região metropolitana · '
                     'Consultas online para todo o Brasil',
                 textAlign: TextAlign.center,
                 style: TextStyle(

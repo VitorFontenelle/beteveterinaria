@@ -52,7 +52,7 @@ class LandingContent {
   static const aboutTitle = 'Conheça a Dra. Elisabete';
 
   static const aboutBody =
-      'Formada em Medicina Veterinária e pós-graduada em felinos, a Dra. Elisabete Nascimento atende animais de pequeno porte com olhar clínico atento e acolhedor. Seu diferencial é a especialização em gatos: ela compreende o comportamento, as necessidades e o cuidado específico que os felinos merecem.';
+      'Formada em Medicina Veterinária e pós-graduada em felinos, a Dra. Elisabete Nascimento atende animais de pequeno porte com olhar clínico atento e acolhedor. Seu diferencial é a especialização em felinos: ela compreende o comportamento, as necessidades e o cuidado específico que os seus gatinhos merecem.';
 
   static const aboutCredentials =
       'Médica Veterinária · Pós-graduada em Felinos · $crmv';
@@ -70,15 +70,15 @@ class LandingContent {
       icon: 'home',
     ),
     ServiceItem(
-      title: 'Caucaia e Eusébio',
+      title: 'Região metropolitana de Fortaleza',
       description:
-          'Também atendo nas redondezas, incluindo Caucaia e Eusébio, com taxa de locomoção. Consulte disponibilidade pelo WhatsApp.',
+          'Também atendo nas redondezas, incluindo Aquiraz, Caucaia, Eusébio e região, com taxa de locomoção. Consulte disponibilidade pelo WhatsApp.',
       icon: 'map',
     ),
     ServiceItem(
       title: 'Consultas online para todo o Brasil',
       description:
-          'Teleconsulta veterinária com orientação profissional à distância. Em alguns casos, pode ser necessário encaminhamento para uma avaliação presencial.',
+          'Teleconsulta veterinária com orientação profissional à distância. Caso necessário, será feito encaminhamento para uma avaliação presencial.',
       icon: 'video',
     ),
     ServiceItem(
@@ -124,27 +124,17 @@ class LandingContent {
 
   static const faqs = <FaqItem>[
     FaqItem(
-      question: 'A Dra. Elisabete atende em Fortaleza?',
-      answer:
-          'Sim. Ela realiza consultas veterinárias presenciais em Fortaleza — Ceará, no conforto da casa do tutor.',
-    ),
-    FaqItem(
-      question: 'Atende também em Caucaia ou Eusébio?',
-      answer:
-          'Sim. Atendimentos nas redondezas, como Caucaia e Eusébio, são possíveis com taxa de locomoção. Confirme disponibilidade pelo WhatsApp.',
-    ),
-    FaqItem(
       question: 'Como funciona a consulta online?',
       answer:
           'A teleconsulta é oferecida para todo o Brasil e permite orientação veterinária à distância. Em alguns casos, será necessário encaminhamento para uma avaliação presencial.',
     ),
     FaqItem(
-      question: 'Ela é especialista em gatos?',
+      question: 'Mas ela só atende gatos?',
       answer:
-          'Sim. Além de atender animais de pequeno porte, a Dra. Elisabete é pós-graduada em felinos e tem a medicina felina como destaque da sua prática.',
+          'Não, ela atende animais de pequeno porte, tanto cães quanto gatos.',
     ),
     FaqItem(
-      question: 'É possível receber prescrição de medicamentos?',
+      question: 'A consulta online inclui prescrição de medicamentos?',
       answer:
           'Quando clinicamente indicado, a consulta pode incluir a prescrição de medicamentos para o tratamento do seu pet.',
     ),
