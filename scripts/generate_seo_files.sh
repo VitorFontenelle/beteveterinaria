@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SITE_URL="${SITE_URL:-https://beteveterinaria.pages.dev}"
+SITE_URL="${SITE_URL:-https://beteveterinaria.com}"
 LASTMOD="$(date -u +%Y-%m-%d)"
 
 cat > web/robots.txt <<EOF

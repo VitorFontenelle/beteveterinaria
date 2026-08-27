@@ -16,7 +16,7 @@ bash scripts/generate_seo_files.sh
 flutter --version
 flutter config --enable-web
 flutter pub get
-flutter build web --release --dart-define=SITE_URL="${SITE_URL:-https://beteveterinaria.pages.dev}"
+flutter build web --release --dart-define=SITE_URL="${SITE_URL:-https://beteveterinaria.com}"
 
 if [ -f web/robots.txt ]; then
   cp web/robots.txt build/web/robots.txt

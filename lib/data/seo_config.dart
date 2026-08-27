@@ -2,7 +2,7 @@
 class SeoConfig {
   static const String siteUrl = String.fromEnvironment(
     'SITE_URL',
-    defaultValue: 'https://beteveterinaria.pages.dev',
+    defaultValue: 'https://beteveterinaria.com',
   );
 
   static const String pageTitle =

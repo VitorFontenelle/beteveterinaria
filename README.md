@@ -25,7 +25,7 @@ flutter run -d chrome
 
 ```bash
 # Optional: set the public site URL used in canonical tags and sitemap
-export SITE_URL=https://beteveterinaria.pages.dev
+export SITE_URL=https://beteveterinaria.com
 
 bash scripts/generate_seo_files.sh
 flutter build web --release --dart-define=SITE_URL=$SITE_URL
@@ -52,7 +52,7 @@ Output is written to `build/web/`.
 | Variable | Value | When to use |
 |----------|-------|-------------|
 | `FLUTTER_VERSION` | `stable` | Default Flutter channel |
-| `SITE_URL` | `https://beteveterinaria.pages.dev` | Production URL for canonical tags, sitemap, and Open Graph |
+| `SITE_URL` | `https://beteveterinaria.com` | Production URL for canonical tags, sitemap, and Open Graph |
 
 ### Alternative: deploy with Wrangler
 
