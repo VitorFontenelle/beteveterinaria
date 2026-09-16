@@ -67,7 +67,11 @@ npx wrangler pages deploy build/web --project-name=beteveterinaria
 The site includes:
 
 - Meta tags — title, description, keywords, robots, canonical, Open Graph, Twitter Card
-- JSON-LD structured data — `VeterinaryCare`, `WebSite`, `WebPage`, `Person`, `FAQPage`
+- JSON-LD structured data — `VeterinaryCare` / `LocalBusiness`, `WebSite`, `WebPage`, `Person`, `FAQPage`
+- Dedicated service URLs for search intents:
+  - `/medico-veterinario-fortaleza/`
+  - `/veterinario-a-domicilio-fortaleza/`
+  - `/veterinario-online/`
 - `robots.txt` and `sitemap.xml` generated at build time from `SITE_URL`
 - Static HTML landing copy in `web/index.html` for the first crawl wave (visually hidden after Flutter loads)
 - Semantic headings, selectable text, and FAQ answers kept in the DOM
@@ -76,10 +80,10 @@ The site includes:
 
 1. Go to [Google Search Console](https://search.google.com/search-console)
 2. Add your property and verify ownership
-3. Submit `https://your-domain/sitemap.xml`
-4. Use **URL Inspection** to request indexing of the homepage
+3. Submit `https://beteveterinaria.com/sitemap.xml`
+4. Use **URL Inspection** to request indexing of the homepage **and** each service URL above
 
-Also consider claiming a **Google Business Profile** for Fortaleza — it often has more impact on Maps / local pack than the website alone.
+Also claim a **Google Business Profile** for Fortaleza (category: Veterinarian / Mobile veterinarian) — it often has more impact on Maps / local pack than the website alone.
 
 ## Contact
 

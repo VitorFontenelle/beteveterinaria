@@ -6,13 +6,13 @@ class SeoConfig {
   );
 
   static const String pageTitle =
-      'Veterinária em Fortaleza | Dra. Elisabete Nascimento — Especialista em Felinos';
+      'Médica Veterinária em Fortaleza | Veterinário Online e a Domicílio';
 
   static const String metaDescription =
-      'Médica veterinária em Fortaleza especializada em felinos. Consultas presenciais em Fortaleza, Caucaia e Eusébio, e teleconsulta para todo o Brasil. Agende pelo WhatsApp.';
+      'Médica veterinária em Fortaleza: veterinário a domicílio na capital e região metropolitana, e veterinário online (teleconsulta) para todo o Brasil. Especialista em felinos. Agende pelo WhatsApp.';
 
   static const String keywords =
-      'veterinária Fortaleza, médica veterinária Fortaleza, veterinária domiciliar Fortaleza, especialista em felinos, veterinária de gatos, consulta veterinária online, veterinária Caucaia, veterinária Eusébio, Elisabete Nascimento, beteveterinaria';
+      'veterinário online, médico veterinário em Fortaleza, médica veterinária Fortaleza, veterinário a domicilio, veterinário a domicílio Fortaleza, veterinária domiciliar Fortaleza, consulta veterinária online, especialista em felinos, veterinária Aquiraz, veterinária Caucaia, veterinária Eusébio, região metropolitana Fortaleza, Elisabete Nascimento, beteveterinaria';
 
   static const String author = 'Dra. Elisabete Nascimento';
 }

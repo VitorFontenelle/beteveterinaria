@@ -42,17 +42,18 @@ class LandingContent {
   static const instagramHandle = '@beteveterinaria';
 
   static const heroEyebrow =
-      'Médica Veterinária em Fortaleza · Especialista em Felinos';
+      'Médica Veterinária em Fortaleza · A domicílio e online';
 
-  static const heroHeadline = 'Cuidado veterinário próximo, com carinho de quem entende.';
+  static const heroHeadline =
+      'Médica veterinária em Fortaleza — atendimento a domicílio e veterinário online.';
 
   static const heroSubhead =
-      'Consultas presenciais em Fortaleza e região, e atendimento online para todo o Brasil — com especial atenção aos felinos.';
+      'Veterinário a domicílio em Fortaleza e região metropolitana, e veterinário online (teleconsulta) para todo o Brasil — com especial atenção aos felinos.';
 
   static const aboutTitle = 'Conheça a Dra. Elisabete';
 
   static const aboutBody =
-      'Formada em Medicina Veterinária e pós-graduada em felinos, a Dra. Elisabete Nascimento atende animais de pequeno porte com olhar clínico atento e acolhedor. Seu diferencial é a especialização em felinos: ela compreende o comportamento, as necessidades e o cuidado específico que os seus gatinhos merecem.';
+      'Formada em Medicina Veterinária e pós-graduada em felinos, a Dra. Elisabete Nascimento é médica veterinária em Fortaleza e atende animais de pequeno porte com olhar clínico atento e acolhedor. Seu diferencial é a especialização em felinos: ela compreende o comportamento, as necessidades e o cuidado específico que os seus gatinhos merecem.';
 
   static const aboutCredentials =
       'Médica Veterinária · Pós-graduada em Felinos · $crmv';
@@ -60,25 +61,25 @@ class LandingContent {
   static const servicesTitle = 'Como posso atender o seu pet';
 
   static const servicesLead =
-      'Atendimento veterinário pensado para a rotina da sua família — em casa, na região ou online.';
+      'Médico veterinário em Fortaleza para quem busca atendimento a domicílio, na região ou veterinário online.';
 
   static const services = <ServiceItem>[
     ServiceItem(
-      title: 'Consultas presenciais em Fortaleza',
+      title: 'Veterinário a domicílio em Fortaleza',
       description:
-          'Avaliação clínica no conforto da sua casa em Fortaleza — CE, sem o estresse do deslocamento até uma clínica.',
+          'Consulta veterinária presencial no conforto da sua casa em Fortaleza — CE, sem o estresse do deslocamento até uma clínica.',
       icon: 'home',
     ),
     ServiceItem(
       title: 'Região metropolitana de Fortaleza',
       description:
-          'Também atendo nas redondezas, incluindo Aquiraz, Caucaia, Eusébio e região, com taxa de locomoção. Consulte disponibilidade pelo WhatsApp.',
+          'Também atendo a domicílio nas redondezas, incluindo Aquiraz, Caucaia, Eusébio e região, com taxa de locomoção. Consulte disponibilidade pelo WhatsApp.',
       icon: 'map',
     ),
     ServiceItem(
-      title: 'Consultas online para todo o Brasil',
+      title: 'Veterinário online para todo o Brasil',
       description:
-          'Teleconsulta veterinária com orientação profissional à distância. Caso necessário, será feito encaminhamento para uma avaliação presencial.',
+          'Consulta veterinária online (teleconsulta) com orientação profissional à distância. Caso necessário, será feito encaminhamento para uma avaliação presencial.',
       icon: 'video',
     ),
     ServiceItem(
@@ -89,10 +90,10 @@ class LandingContent {
     ),
   ];
 
-  static const homeVisitTitle = 'Por que atendimento domiciliar?';
+  static const homeVisitTitle = 'Por que veterinário a domicílio?';
 
   static const homeVisitLead =
-      'Quem ama, cuida — e cuidar em casa reduz o estresse do pet e facilita a rotina do tutor.';
+      'Quem ama, cuida — e o atendimento veterinário a domicílio reduz o estresse do pet e facilita a rotina do tutor.';
 
   static const benefits = <BenefitItem>[
     BenefitItem(
@@ -120,18 +121,23 @@ class LandingContent {
   static const faqTitle = 'Perguntas frequentes';
 
   static const faqLead =
-      'Tire dúvidas comuns sobre consultas presenciais, online e área de atendimento.';
+      'Tire dúvidas comuns sobre veterinário online, atendimento a domicílio em Fortaleza e área de cobertura.';
 
   static const faqs = <FaqItem>[
     FaqItem(
-      question: 'Como funciona a consulta online?',
+      question: 'Vocês fazem veterinário online?',
       answer:
-          'A teleconsulta é oferecida para todo o Brasil e permite orientação veterinária à distância. Em alguns casos, será necessário encaminhamento para uma avaliação presencial.',
+          'Sim. A Dra. Elisabete oferece veterinário online (teleconsulta / consulta veterinária online) para todo o Brasil, com orientação à distância. Em alguns casos, será necessário encaminhamento para uma avaliação presencial.',
+    ),
+    FaqItem(
+      question: 'Tem médico veterinário a domicílio em Fortaleza?',
+      answer:
+          'Sim. O atendimento é veterinário a domicílio em Fortaleza — CE, e também na região metropolitana (incluindo Aquiraz, Caucaia, Eusébio e região, com taxa de locomoção).',
     ),
     FaqItem(
       question: 'Mas ela só atende gatos?',
       answer:
-          'Não, ela atende animais de pequeno porte, tanto cães quanto gatos.',
+          'Não, ela atende animais de pequeno porte, tanto cães quanto gatos. A especialização em felinos é um diferencial, não uma restrição.',
     ),
     FaqItem(
       question: 'A consulta online inclui prescrição de medicamentos?',
@@ -141,7 +147,7 @@ class LandingContent {
     FaqItem(
       question: 'Como agendar uma consulta?',
       answer:
-          'O contato profissional é pelo WhatsApp +55 85 9959-6612 ou pelo Instagram @beteveterinaria. Envie uma mensagem e combine o melhor horário.',
+          'O contato profissional é pelo WhatsApp +55 85 9959-6612 ou pelo Instagram @beteveterinaria. Envie uma mensagem e combine o melhor horário — presencial em Fortaleza ou veterinário online.',
       hasContactLinks: true,
     ),
   ];
@@ -149,7 +155,7 @@ class LandingContent {
   static const ctaTitle = 'Pronto para cuidar do seu pet?';
 
   static const ctaBody =
-      'Fale com a Dra. Elisabete pelo WhatsApp e agende sua consulta presencial em Fortaleza e região, ou online para todo o Brasil.';
+      'Fale com a Dra. Elisabete pelo WhatsApp e agende médico veterinário em Fortaleza a domicílio, ou veterinário online para todo o Brasil.';
 
   static const whatsappLabel = 'Agendar pelo WhatsApp';
   static const instagramLabel = 'Seguir no Instagram';

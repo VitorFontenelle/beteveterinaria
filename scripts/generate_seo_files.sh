@@ -20,12 +20,33 @@ cat > web/sitemap.xml <<EOF
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>${SITE_URL}/medico-veterinario-fortaleza/</loc>
+    <lastmod>${LASTMOD}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>${SITE_URL}/veterinario-a-domicilio-fortaleza/</loc>
+    <lastmod>${LASTMOD}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>${SITE_URL}/veterinario-online/</loc>
+    <lastmod>${LASTMOD}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset>
 EOF
 
-if command -v sed >/dev/null 2>&1; then
-  sed -i.bak "s|__SITE_URL__|${SITE_URL}|g" web/index.html
-  rm -f web/index.html.bak
+# Replace SITE_URL placeholders in all SEO HTML shells (home + service pages).
+if command -v find >/dev/null 2>&1 && command -v sed >/dev/null 2>&1; then
+  while IFS= read -r -d '' file; do
+    sed -i.bak "s|__SITE_URL__|${SITE_URL}|g" "$file"
+    rm -f "${file}.bak"
+  done < <(find web -name '*.html' -print0)
 fi
 
 echo "SEO files generated for ${SITE_URL}"

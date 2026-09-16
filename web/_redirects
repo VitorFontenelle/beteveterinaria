@@ -1,1 +1,10 @@
+# Serve dedicated SEO landing pages before the SPA fallback.
+/medico-veterinario-fortaleza    /medico-veterinario-fortaleza/index.html   200
+/medico-veterinario-fortaleza/   /medico-veterinario-fortaleza/index.html   200
+/veterinario-a-domicilio-fortaleza    /veterinario-a-domicilio-fortaleza/index.html   200
+/veterinario-a-domicilio-fortaleza/   /veterinario-a-domicilio-fortaleza/index.html   200
+/veterinario-online    /veterinario-online/index.html   200
+/veterinario-online/   /veterinario-online/index.html   200
+
+# Flutter SPA fallback for the interactive landing page.
 /*    /index.html   200
