@@ -166,6 +166,12 @@ class LandingContent {
       answer:
           'Sim. Há atendimento domiciliar em Aquiraz, Caucaia, Eusébio e outras cidades da RM de Fortaleza, com taxa de locomoção. Consulte pelo WhatsApp.',
     ),
+    FaqItem(
+      question:
+          'Atendem veterinário a domicílio em Meireles, Aldeota e São João do Tauape?',
+      answer:
+          'Sim. Há atendimento a domicílio nesses bairros de Fortaleza e em toda a capital. Meireles, Aldeota e São João do Tauape são áreas de atendimento frequente — confirme agenda e endereço pelo WhatsApp.',
+    ),
   ];
 
   static const ctaTitle = 'Pronto para cuidar do seu pet?';

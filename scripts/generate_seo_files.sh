@@ -35,6 +35,9 @@ SITEMAP_PATHS=(
   "/medico-veterinario-fortaleza/"
   "/veterinario-fortaleza/"
   "/veterinario-a-domicilio-fortaleza/"
+  "/veterinario-a-domicilio-meireles/"
+  "/veterinario-a-domicilio-aldeota/"
+  "/veterinario-a-domicilio-sao-joao-do-tauape/"
   "/veterinario-perto-de-mim-fortaleza/"
   "/atendimento-veterinario-em-casa-fortaleza/"
   "/veterinaria-domiciliar-fortaleza/"
@@ -54,6 +57,9 @@ SITEMAP_PATHS=(
       changefreq="weekly"
     elif [ "$path" = "/portfolio/" ]; then
       priority="0.85"
+      changefreq="monthly"
+    elif [ "$path" = "/veterinario-a-domicilio-meireles/" ] || [ "$path" = "/veterinario-a-domicilio-aldeota/" ] || [ "$path" = "/veterinario-a-domicilio-sao-joao-do-tauape/" ]; then
+      priority="0.92"
       changefreq="monthly"
     fi
     echo "  <url>"
