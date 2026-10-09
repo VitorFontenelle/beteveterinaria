@@ -150,6 +150,22 @@ class LandingContent {
           'O contato profissional é pelo WhatsApp +55 85 9959-6612 ou pelo Instagram @beteveterinaria. Envie uma mensagem e combine o melhor horário — presencial em Fortaleza ou veterinário online.',
       hasContactLinks: true,
     ),
+    FaqItem(
+      question:
+          'Tem veterinários perto de mim com atendimento a domicílio em Fortaleza?',
+      answer:
+          'Sim. A Dra. Elisabete atende a domicílio em Fortaleza e na região metropolitana (Aquiraz, Caucaia, Eusébio e região). Envie seu bairro pelo WhatsApp para confirmar disponibilidade.',
+    ),
+    FaqItem(
+      question: 'O que é atendimento veterinário em casa?',
+      answer:
+          'É a consulta veterinária realizada no lar do tutor — também chamada de veterinário a domicílio ou veterinária domiciliar — com menos estresse para o pet e horário combinado.',
+    ),
+    FaqItem(
+      question: 'Atendem na região metropolitana de Fortaleza?',
+      answer:
+          'Sim. Há atendimento domiciliar em Aquiraz, Caucaia, Eusébio e outras cidades da RM de Fortaleza, com taxa de locomoção. Consulte pelo WhatsApp.',
+    ),
   ];
 
   static const ctaTitle = 'Pronto para cuidar do seu pet?';

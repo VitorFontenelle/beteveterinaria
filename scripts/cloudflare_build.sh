@@ -24,6 +24,9 @@ fi
 if [ -f web/sitemap.xml ]; then
   cp web/sitemap.xml build/web/sitemap.xml
 fi
+if [ -f web/llms.txt ]; then
+  cp web/llms.txt build/web/llms.txt
+fi
 if [ -f web/_redirects ]; then
   cp web/_redirects build/web/_redirects
 fi

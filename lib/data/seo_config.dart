@@ -12,7 +12,7 @@ class SeoConfig {
       'Médica veterinária em Fortaleza: veterinário a domicílio na capital e região metropolitana, e veterinário online (teleconsulta) para todo o Brasil. Especialista em felinos. Agende pelo WhatsApp.';
 
   static const String keywords =
-      'veterinário online, médico veterinário em Fortaleza, médica veterinária Fortaleza, veterinário a domicilio, veterinário a domicílio Fortaleza, veterinária domiciliar Fortaleza, consulta veterinária online, especialista em felinos, veterinária Aquiraz, veterinária Caucaia, veterinária Eusébio, região metropolitana Fortaleza, Elisabete Nascimento, beteveterinaria';
+      'veterinário, veterinária, veterinário em Fortaleza, veterinários perto de mim, veterinário a domicilio, veterinário a domicílio, atendimento em casa, veterinária domiciliar, médico veterinário em Fortaleza, veterinário online, teleconsulta veterinária, especialista em felinos, veterinária Aquiraz, veterinário Caucaia, veterinária Eusébio, região metropolitana Fortaleza, Elisabete Nascimento, beteveterinaria';
 
   static const String author = 'Dra. Elisabete Nascimento';
 }

@@ -1,8 +1,22 @@
 # Serve dedicated SEO landing pages before the SPA fallback.
+/portfolio    /portfolio/index.html   200
+/portfolio/   /portfolio/index.html   200
 /medico-veterinario-fortaleza    /medico-veterinario-fortaleza/index.html   200
 /medico-veterinario-fortaleza/   /medico-veterinario-fortaleza/index.html   200
+/veterinario-fortaleza    /veterinario-fortaleza/index.html   200
+/veterinario-fortaleza/   /veterinario-fortaleza/index.html   200
 /veterinario-a-domicilio-fortaleza    /veterinario-a-domicilio-fortaleza/index.html   200
 /veterinario-a-domicilio-fortaleza/   /veterinario-a-domicilio-fortaleza/index.html   200
+/veterinario-perto-de-mim-fortaleza    /veterinario-perto-de-mim-fortaleza/index.html   200
+/veterinario-perto-de-mim-fortaleza/   /veterinario-perto-de-mim-fortaleza/index.html   200
+/atendimento-veterinario-em-casa-fortaleza    /atendimento-veterinario-em-casa-fortaleza/index.html   200
+/atendimento-veterinario-em-casa-fortaleza/   /atendimento-veterinario-em-casa-fortaleza/index.html   200
+/veterinaria-domiciliar-fortaleza    /veterinaria-domiciliar-fortaleza/index.html   200
+/veterinaria-domiciliar-fortaleza/   /veterinaria-domiciliar-fortaleza/index.html   200
+/especialista-em-felinos-fortaleza    /especialista-em-felinos-fortaleza/index.html   200
+/especialista-em-felinos-fortaleza/   /especialista-em-felinos-fortaleza/index.html   200
+/veterinario-regiao-metropolitana-fortaleza    /veterinario-regiao-metropolitana-fortaleza/index.html   200
+/veterinario-regiao-metropolitana-fortaleza/   /veterinario-regiao-metropolitana-fortaleza/index.html   200
 /veterinario-online    /veterinario-online/index.html   200
 /veterinario-online/   /veterinario-online/index.html   200
 
